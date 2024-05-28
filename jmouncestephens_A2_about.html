@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- 
+			ITC293 - Introduction to the web
+			Assessment 3 - HTML, CSS and Design
+			
+			Jacob Mounce-Stephens
+			28/4/2024
+
+			This page contains a more detailed about section discussing who
+			I am and what my interests and education is.
+		 -->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Jacob Mounce-Stephens">
+		<meta name="description" content="Portfolio website about page">
+		<meta name="keywords" content="Portfolio, Electric cars">
+		<title>My Portfolio - About me</title>
+
+		<link rel="stylesheet" href="css/portfolio.css">
+		<link rel="icon" href="images/transport.png">
+	</head>
+
+	<body class="page-body">
+		<!-- Div contains the website header -->
+		<div class="page-header">
+			<div class="name-bar">
+				<h1>Jacob Mounce-Stephens</h1>
+				<div class="phone-bar">
+					<img src="images/phone3.png" alt="Phone icon" class="header-image">
+					<a href="tel:0118-999-881-999-119-725-3">0118 999 881 999 119 725 3</a>
+				</div>
+				<div class="email-bar">
+					<img src="images/email.png" alt="Email icon" class="header-image">
+					<a href="mailto:somename@somedomain">somename@somedomain</a>
+				</div>
+			</div>
+			<div class="logo-bar">
+				<img src="images/transport.png" alt="Website logo. An electric car." class="header-logo">
+				<p><a href="https://www.flaticon.com/free-icons/transportation" title="transportation icons">Transportation icons created by msidiqf - Flaticon</a></p>
+			</div>
+		</div>
+		<!-- Div contains both the internal and external navigation bars -->
+		<div class="navigation-div">
+			<div class="navigation-bar">
+				<ul>
+					<li><a href="Index.html">Index</a></li>
+					<li class="active">About</li>
+					<li><a href="jmouncestephens_A2_resume.html">Resume</a></li>
+					<li><a href="skill_1_communication.html">Communication Skills</a></li>
+					<li><a href="skill_2_engineering.html">Engineering Skills</a></li>
+					<li><a href="skill_3_problem_solving.html">Analytical Skills</a></li>
+					<li><a href="jmouncestephens_A2_web_skills.html">Web Skills</a></li>
+				</ul>
+			</div>
+			<div class="internal-navigation">
+				<ul>
+					<li><a href="#about-me-jump">All about me</a></li>
+					<li><a href="#education-jump">My education</a></li>
+					<li><a href="#electric-vehicles-jump">My relation with electric vehicles</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="about-body">
+			<div class="flex-display">
+				<div class="image-section">
+					<!--
+						Nested divs used for image formatting. Needed to make the code similar
+						to how the other images are formatted. Only used for image sections with 2 stacked images.
+					-->
+					<div class="image-table-row">
+						<div class="image-with-credit-box">
+							<img src="images/raspberry-pi.png" alt="A raspberry pi computer" class="website-image">
+							<p>Source: <a href="https://unsplash.com/photos/green-and-black-circuit-board-c3YpscwJb04">Harrison Broadbent</a></p>
+						</div>
+					</div>
+					<div class="image-table-row">				
+						<div class="image-with-credit-box top-gap code-demo">
+							<!-- <video controls class="max-width"><source src="images/code-demo.mp4" type="video/mp4"></video> -->
+							<iframe class="max-width" src="https://www.youtube.com/embed/HrLVkhq0R2I"></iframe>
+							<p>Demonstration of a program I wrote.<br>The simulation is formed by several thousand 'agents' that turn towards each other based on a sensor, the number of agents near itself and some movement parameters.<br>It was created using C++ for the code, OpenGL to interface with the GPU and ImGUI for the UI in the top corner.</p>
+						</div>
+					</div>					
+				</div>
+				<div class="text-block right-block">
+					<!-- Credit (explained in document): Robert Hickman - https://stackoverflow.com/questions/38530800/jumping-to-a-different-part-of-the-same-page-with-a-margin -->
+					<h2 class="section-head"><span id="about-me-jump" class="jump-top"><span class="jump-bottom">All about me</span></span></h2>
+					<p>
+						Hello and thank for you reading through my website!<br><br>As is probably already know, my name is Jacob Mounce-Stephens, a nearly 21 technology, mathematics and science enthusiast.<br>Throughout my entire life I have always been a very logical thinker and so naturally was drawn towards various scientific and mathematic fields. My relationship with some of these fields is described below:
+					</p>
+					<hr>
+					<h3 class="section-subhead">My educational interests</h3>
+					<ul>
+						<li>Mathematics</li>
+						<li class="no-list-style">
+							<ul>
+								<li>I have been in love with most forms of mathematics since I was around 10 years old way back in primary school</li>
+								<li>I am always willing to learn new formulas and topics to broaden my understanding of all mathematics although my primary focus is in pure mathematics</li>
+								<li>My weakest topics are probability and statistics by quite a bit</li>
+								<li>In my high school, I was one of only 2 students to study extension 2 mathematics in my graduation year</li>
+								<li>After graduating I still take time to research mathematics and improve my abilities. A large part of this is applying mathematics to graphical programming applications</li>
+							</ul>
+						</li>
+						<li class="no-list-style"><br></li>
+						<li>Science</li>
+						<li class="no-list-style">
+							<ul>
+								<li>I have loved science for as long as I can remember. I have always found it incredible to see that science, and mathematics for that note, is the culmination of thousands of years of human history all coming together to produce incredible machines and all sorts of useful items for everyday application</li>
+								<li>Science itself is an incredible broad topic and thus I need to mention that my particular interests and abilities are based in chemistry and physics</li>
+								<li>I love chemistry so much that I have spent the time to learn the entirety of the periodic table from memory and am able to list of all elements in order with ease</li>
+							</ul>
+						</li>
+						<li class="no-list-style"><br></li>
+						<li>Computer science</li>
+						<li class="no-list-style">
+							<ul>
+								<li>Ever since I had access to my first computer a long time ago, I have always been absolutely fascinated by them. Even today, I still sometimes think about how incredible, and impossible, it seems that humans have managed to trick rocks into thinking by shoving electricity into them in a genius way</li>
+								<li>Since around year 8 of high school, I have been a mostly self-taught programmer. First beginning with Python then switching my main language over to C++ in around year 11. Since highschool I am now a student of Charles Sturt University (CSU) to hopefully refine some knowledge I might be lacking from being self taught</li>
+								<li>Along with Python and C++, I have also explored HTML, CSS and JavaScript when I learned how to make basic websites and since then I have also learned a bit about Assembly and Java</li>
+								<li>My main interest in computer science lies with graphical programming and utilising the GPU to render images. As such, I have learned how to use the graphics API OpenGL and have been working on my own API to interface with OpenGL to make the process easier</li>
+							</ul>
+						</li>
+					</ul>
+					<hr>
+					<h3 class="section-subhead">My hobbies</h3>
+					<p>
+						While I was a student at primary and high school, each and every week I would participate in ten-pin bowling at the local bathurst bowling center. Over the course of the years I played I slowly improved until I eventually stopped playing after highschool. At my best, my average for each game was 145 out of 300 pins with my best game ever being 225. I even participated in a few tournaments with some of my friends from the bathurst center.
+						<br><br>
+						Since then, when I am not studying at Uni or working, I spend my time largely either programming or playing puzzle or automation games.<br>
+						My main programming focus for a while has been working on creating and improving a graphics API I have been writing that sits on top of OpenGL to streamline the process of writing GPU driven programs which has been extremely useful in teaching me all about how video games and general graphics are created on computers.<br>
+						As for games I play, like stated above, I largely play puzzle games but also thoroughly enjoy games such as factory and satisfactory for their factory construction gameplay. These two games in particular are very enjoyable because I get to plan and design a factory system and then get to sit back and watch everything I have created complete tasks for me without any more manual work.
+						<br><br>
+						There is almost never a time I am not listening to music. At the moment my 3 top artists are (in no particular order):
+					</p>
+					<ol>
+						<li>Woodkid</li>
+						<li>Lena Raine</li>
+						<li>Meganeko</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="flex-display">
+				<div class="text-block left-block">
+					<h2 class="section-head"><span id="education-jump" class="jump-top"><span class="jump-bottom">My education</span></span></h2>
+					<p>
+						Going over my education is quite simple and this section will also largely be mentioned on my resume page however with less additional details and as more of a simple list. In terms of my education as a whole, I consider primary school to be a place just to learn the fundamentals of everything and to begin discovering what it is you are interested in. This is definately where I discovered my interest in science, mathematics and engineering. However, as it was primary school, I didn't gain any knowledge that wouldn't be considered trivial now that I'm older.<br><br>
+						High school, on the other hand, is where I began to fully explore my interests due to more difficult subjects as well as the ability to choose electives. Throughout my later years of highschool, the main electives I completed are:
+					</p>
+					<ul>
+						<li>Woodworking (2 years) - I studied wood work throughout years 9-11. This was my first introduction to the process of desinging and creating something physical with my own hands while utilising various machines and tools</li>
+						<li>Design (1 year) - I studied design in year 11. Here I was able to learn about the skills required to design and market products and to explore the usefulness of the product and if it is even necessary to be created. Unfortunately, I struggled with the subject more than I had hoped which demonstrated to me that while I am capable of desinging the look and aestetic of a product, it is not my strong suit</li>
+						<li>Software developmenr (4 years) - I studied software from years 9-12. I very much enjoyed my software courses across the 4 years I studied it however due to my dedication to self study during that period, I was largely already prepared and knowledgeable of content covered in class</li>
+						<li>Mathematics (Advanced, Ext 1 & Ext 2) - I studied mathematics throughout the entirety of highschool, always being in the most difficult class that was available to me. This was an extremely valuable experience to me and I learned so much more than I ever expected, especially in extension 2 maths during year 12</li>
+						<li>Chemistry (2 years) - In years 11 and 12 I studied chemistry as one of my science subjects. I loved these lessons and learning about the ideas that form the entire universe</li>
+						<li>Physics (2 years) - Physics was also in year 11 and 12 and helped me learn about and appreciate a lot of the work that goes into modern constructions. This includes everything from how bridges are made to remain stable to how cars can travel around corners quickly to how electricity travels through circuity. This subject really broadened my knowledge in many different fields</li>
+					</ul>
+				</div>
+				<div class="image-section">
+					<div class="image-with-credit-box">
+						<img src="images/chemistry.png" alt="Image of a chemistry flask and periodic table" class="website-image chemistry-image">
+						<p>Source:<a href="https://unsplash.com/photos/clear-glass-pitcher-on-white-paper-ohrhLVISJ1o">Vedrana Filipović</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="text-block right-block">
+				<h2 class="section-head"><span id="electric-vehicles-jump" class="jump-top"><span class="jump-bottom">My relation with electric vehicles</span></span></h2>
+				<p>
+					As described above in great depth, my interests in life all revolve around technology, mathematics and science. In a sense, electric vehicles are the combination of these three fields all into one. The car itself is a product of technology and engineering, designed and produced through mathematics and powered by scientific research and work. As a result of these factors, it is natural that electric vehicles would spark inspiritation in me.
+					<br><br>
+					Although currently I am inexperienced in the field of creating such a machine, I think the experience of working on and developing new engine and power solutions for electric vehicles would be an invaluable experience. Futhermore, I have the motiviation, drive and interest to learn about these wonderful pieces of technology.
+				</p>
+			</div>
+		</div>
+		
+		<hr>
+		<footer class="page-footer">
+			<p>&copy; 2024 Jacob Mounce-Stephens. All rights reserved. All images/videos are original works unless otherwise stated.<br>Phone and Email icon in header are designed by <a href="www.freepik.com">Freepik</a>.</p>
+		</footer>
+	</body>
+
+</html>

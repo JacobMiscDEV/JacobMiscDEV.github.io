@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function resetForm(form) {
+/*				if (confirm("Are you sure?")) {
+					form["input-text-first-name"].value = "";
+				}*/
+			}
+
+			function checkForm(form) {
+				if (!form.elements["input-text-first-name"].value & !form.elements["input-text-last-name"].value) {
+					alert("The first name and last name fields cannot be empty!");
+				}
+
+				else if (!form.elements["input-text-first-name"].value) {
+					alert("The first name field cannot be empty!");
+				}
+
+				else if (!form.elements["input-text-last-name"].value) {
+					alert("The last name field cannot be empty!");
+				}
+
+				// Required fields contain values
+				else {
+					fetch("http://csusap.csu.edu.au/cgi-bin/echo_form", {
+						method: "POST",
+						body: new FormData(form),
+						headers: {
+							"Content-type": "application/json; charset=UTF-8"
+						}
+					});
+				}
+			}
+
+			function validateForm() {
+				// alert("test");
+
+				var form = document.forms["email-form"];
+
+				if (!form.elements["input-text-first-name"].value & !form.elements["input-text-last-name"].value) {
+					alert("The first name and last name fields cannot be empty!");
+					return false;
+				}
+
+				else if (!form.elements["input-text-first-name"].value) {
+					alert("The first name field cannot be empty!");
+					return false;
+				}
+
+				else if (!form.elements["input-text-last-name"].value) {
+					alert("The last name field cannot be empty!");
+					return false;
+				}
+
+				return true;
+			}
+		</script>
+
+		<!-- 
+			ITC293 - Introduction to the web
+			Assessment 3 - HTML, CSS and Design
+			
+			Jacob Mounce-Stephens
+			28/4/2024
+
+			This page contains a short demonstration of some HTML and CSS
+			skills.
+		 -->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Jacob Mounce-Stephens">
+		<meta name="description" content="Portfolio website web skills page">
+		<meta name="keywords" content="Portfolio, Electric cars">
+		<title>My Portfolio - Web Skills</title>
+
+		<link rel="stylesheet" href="css/portfolio.css">
+		<link rel="icon" href="images/transport.png">
+	</head>
+
+	<body class="page-body">
+		<!-- Div contains the website header -->
+		<div class="page-header">
+			<div class="name-bar">
+				<h1>Jacob Mounce-Stephens</h1>
+				<div class="phone-bar">
+					<img src="images/phone3.png" alt="Phone icon" class="header-image">
+					<a href="tel:0118-999-881-999-119-725-3">0118 999 881 999 119 725 3</a>
+				</div>
+				<div class="email-bar">
+					<img src="images/email.png" alt="Email icon" class="header-image">
+					<a href="mailto:somename@somedomain">somename@somedomain</a>
+				</div>
+			</div>
+			<div class="logo-bar">
+				<img src="images/transport.png" alt="Website logo. An electric car." class="header-logo">
+				<p><a href="https://www.flaticon.com/free-icons/transportation" title="transportation icons">Transportation icons created by msidiqf - Flaticon</a></p>
+			</div>
+		</div>
+		<!-- Div contains both the internal and external navigation bars -->
+		<div class="navigation-div">
+			<div class="navigation-bar">
+				<ul>
+					<li><a href="Index.html">Index</a></li>
+					<li><a href="jmouncestephens_A2_about.html">About</a></li>
+					<li><a href="jmouncestephens_A2_resume.html">Resume</a></li>
+					<li><a href="skill_1_communication.html">Communication Skills</a></li>
+					<li><a href="skill_2_engineering.html">Engineering Skills</a></li>
+					<li><a href="skill_3_problem_solving.html">Analytical Skills</a></li>
+					<li><a href="jmouncestephens_A2_web_skills.html">Web Skills</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="text-block center-block form-block">
+			<form id="main-form" name="email-form" action="http://csusap.csu.edu.au/cgi-bin/echo_form" onsubmit="return validateForm()" method="post">
+				<!-- User information section -->
+				<div class="name-input">
+					<div class="form-text-block">
+						<label for="input-text-first-name">First Name <span class="require">(Required)</span></label>
+						<input type="text" id="input-text-first-name" maxlength="60"><br>
+					</div>
+					<div class="form-text-block">
+						<label for="input-text-last-name">Last Name <span class="require">(Required)</span></label>
+						<input type="text" id="input-text-last-name" maxlength="60"><br>
+					</div>
+				</div>
+				<div class="form-text-block">
+					<label for="input-text-email">Email Address</label>
+					<input type="text" id="input-text-email" maxlength="60">
+				</div>
+				<br>
+
+				<!-- Age input section -->
+				<fieldset style="display:inline;">
+					<legend>How old are you?</legend>
+					<input type="radio" name="input-radio" id="input-radio-s1" value="15-25">
+					<label for="input-radio-s1">15-25</label>
+					<input type="radio" name="input-radio" id="input-radio-s2" value="26-35">
+					<label for="input-radio-s2">26-35</label>
+					<input type="radio" name="input-radio" id="input-radio-s3" value="36-45">
+					<label for="input-radio-s3">36-45</label>
+					<input type="radio" name="input-radio" id="input-radio-s4" value="46-55">
+					<label for="input-radio-s4">46-55</label>
+					<input type="radio" name="input-radio" id="input-radio-s5" value="55+">
+					<label for="input-radio-s5">55+</label>
+				</fieldset>
+				<br>
+
+				<!-- Department selection section -->
+				<fieldset style="display:inline;">
+					<legend>Select department(s) of interest</legend>
+					<input type="checkbox" name="input-checkbox-s1">
+					<label for="input-checkbox-s1">Marketing</label><br>
+					<input type="checkbox" name="input-checkbox-s2">
+					<label for="input-checkbox-s2">Graphics Design</label><br>
+					<input type="checkbox" name="input-checkbox-s3">
+					<label for="input-checkbox-s3">Management</label><br>
+					<input type="checkbox" name="input-checkbox-s4">
+					<label for="input-checkbox-s4">Engineering</label><br>
+					<input type="checkbox" name="input-checkbox-s5">
+					<label for="input-checkbox-s5">Production</label>
+				</fieldset>
+				<br>
+
+				<!-- Misc section -->
+				<p class="no-lower-margin">Comments:</p>
+				<textarea id="comment-input" rows="3" cols="60" maxlength="180"></textarea><br>
+
+				<button type="reset" form="main-form" id="reset-button">Reset</button>
+				<button type="submit" id="submit-button">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>

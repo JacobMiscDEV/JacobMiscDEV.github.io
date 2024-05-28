@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- 
+			ITC293 - Introduction to the web
+			Assessment 3 - HTML, CSS and Design
+			
+			Jacob Mounce-Stephens
+			28/4/2024
+
+			This page contains a brief introduction as well as basic summary
+			of the contents of the other pages on this site.
+		 -->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Jacob Mounce-Stephens">
+		<meta name="description" content="Portfolio website index page">
+		<meta name="keywords" content="Portfolio, Electric cars">
+		<title>My Portfolio - Index</title>
+
+		<link rel="stylesheet" href="css/portfolio.css">
+		<link rel="icon" href="images/transport.png">
+	</head>
+
+	<body class="page-body">
+		<!-- Div contains the website header -->
+		<div class="page-header">
+			<div class="name-bar">
+				<h1>Jacob Mounce-Stephens</h1>
+				<div class="phone-bar">
+					<img src="images/phone3.png" alt="Phone icon" class="header-image">
+					<a href="tel:0118-999-881-999-119-725-3">0118 999 881 999 119 725 3</a>
+				</div>
+				<div class="email-bar">
+					<img src="images/email.png" alt="Email icon" class="header-image">
+					<a href="mailto:somename@somedomain">somename@somedomain</a>
+				</div>
+			</div>
+			<div class="logo-bar">
+				<img src="images/transport.png" alt="Website logo. An electric car." class="header-logo">
+				<p><a href="https://www.flaticon.com/free-icons/transportation" title="transportation icons">Transportation icons created by msidiqf - Flaticon</a></p>
+			</div>
+		</div>
+		<!-- Div contains both the internal and external navigation bars -->
+		<div class="navigation-div">
+			<div class="navigation-bar">
+				<ul>
+					<li class="active">Index</li>
+					<li><a href="jmouncestephens_A2_about.html">About</a></li>
+					<li><a href="jmouncestephens_A2_resume.html">Resume</a></li>
+					<li><a href="skill_1_communication.html">Communication Skills</a></li>
+					<li><a href="skill_2_engineering.html">Engineering Skills</a></li>
+					<li><a href="skill_3_problem_solving.html">Analytical Skills</a></li>
+					<li><a href="jmouncestephens_A2_web_skills.html">Web Skills</a></li>
+				</ul>
+			</div>
+			<div class="internal-navigation">
+				<ul>
+					<li><a href="#intro-jump">Introduction</a></li>
+					<li><a href="#about-jump">Who am I?</a></li>
+					<li><a href="#resume-jump">What can I offer?</a></li>
+					<li><a href="#web-skills-jump">My web skills</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="index-body">
+
+			<div class="flex-display">
+				<div class="text-block left-block" id="intro-summary">
+					<!-- Credit (explained in document): Robert Hickman - https://stackoverflow.com/questions/38530800/jumping-to-a-different-part-of-the-same-page-with-a-margin -->
+					<h2 class="section-head"><span id="intro-jump" class="jump-top"><span class="jump-bottom">Introduction</span></span></h2>
+					<p>
+						Welcome to my website portfolio! My name is Jacob Mounce-Stephens, a current student of Charles Sturt University (CSU) aiming to one day work in the designing and production of electrical vehicles.<br><br>
+						This portfolio should outline who am I, what I can do for you and what my skills are. So please, take a look around!<br><br>
+						If, after browsing this portfolio, there is anything you wish to ask me about, or think there is something I can contribute to you, please reach out to me through the email address of phone number provided at the top of all pages or by clicking the links below:
+					</p>
+					<ul>
+						<li><a href="tel:0118-999-881-999-119-725-3">0118 999 881 999 119 725 3</a></li>
+						<li><a href="mailto:somename@somedomain">somename@somedomain</a></li>
+					</ul>
+				</div>
+				<div class="image-section">
+					<div class="image-with-credit-box">
+						<img src="images/car1.png" alt="Image of car" class="website-image">
+						<p>Source: <a href="https://unsplash.com/photos/parked-blue-coupe-beside-trees-during-daytime-eaPkue76Ip4">Bram Van Oost</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="flex-display">
+				<div class="image-section">
+					<!-- Credit box divs needed for formatting. The images are original. -->
+					<!--
+						Nested divs used for image formatting. Needed to make the code similar
+						to how the other images are formatted. Only used for image sections with 2 stacked images.
+					-->
+					<div class="image-table-row">
+						<div class="image-with-credit-box">
+							<img src="images/code1.png" alt="Example C++ code" class="website-image code1-image">
+						</div>
+					</div>
+					<div class="image-table-row">
+						<div class="image-with-credit-box">
+							<img src="images/math1.png" alt="Example math equation" class="website-image math1-image">
+						</div>
+					</div>
+				</div>
+				<div class="text-block right-block" id="about-summary">
+					<h2 class="section-head right-align"><span id="about-jump" class="jump-top"><span class="jump-bottom">Who am I?</span></span></h2>
+					<p>
+						I am currently a student at CSU completing a bachelor of computer science. Throughout my life I have always loved <span class="subject-emphasis comp-sci">computers</span>, <span class="subject-emphasis maths">mathematics</span>, <span class="subject-emphasis engineer">engineering</span> and all forms of <span class="subject-emphasis hardware">electronics and machinery</span>.
+					</p>
+					<hr>
+					<ul class="left-align">
+						<li><span class="subject-emphasis comp-sci">Computer science</span></li>
+						<li class="no-list-style">
+							<ul>
+								<li>Owned a computer science 2015</li>
+								<li>Built my own personal computer in 2022</li>
+								<li>First learned how to program in year 8</li>
+								<li>Studied several programming languages including (in order of learning):</li>
+								<li class="no-list-style">
+									<ol>
+										<li>Python</li>
+										<li>HTML, CSS, JavaScript</li>
+										<li>C++ (My main language)</li>
+										<li>Limited assembly</li>
+										<li>Java</li>
+									</ol>
+								</li>
+								<li>Great interest in graphical, GPU driven, programming</li>
+							</ul>
+						</li>
+						<li><span class="subject-emphasis maths">Mathematics</span></li>
+						<li class="no-list-style">
+							<ul>
+								<li>Loved mathematics since year 5 of school</li>
+								<li>Studied extension 1 and 2 in high school</li>
+								<li>Research mathematics in spare time</li>
+							</ul>
+						</li>
+						<li><span class="subject-emphasis engineer">Engineering</span></li>
+						<li class="no-list-style">
+							<ul>
+								<li>Am extremely impressed and amazed by the engineering work of humans throughout history</li>
+								<li>Enjoy dissassembling old machines to inspect how they work</li>
+								<li>Learned about some engineering processes through some carpentry lessons</li>
+							</ul>
+						</li>
+						<li><span class="subject-emphasis hardware">Electronics and machinery</span></li>
+						<li class="no-list-style">
+							<ul>
+								<li>Assembled my own computer</li>
+								<li>I enjoy researching the fundamentals about how computers work on a hardware level</li>
+								<li>Studied electronics where I have constructed basic circuitry</li>
+							</ul>
+						</li>
+					</ul>
+					<hr>
+					<p class="center-align">
+						To find out more about who I am, please visit my <a href="jmouncestephens_A1_about.html" class="link-box">about</a> page.
+					</p>
+				</div>
+			</div>
+
+			<div class="text-block left-block" id="resume-summary">
+				<h2 class="section-head"><span id="resume-jump" class="jump-top"><span class="jump-bottom">What can I offer?</span></span></h2>
+				<p>
+					Over the course of my educational career, I have learned lots about electronics, engineering and computer science. As a result I have spent a lot of time discovering and exploring my interest in these fields.<br><br>Naturally, these interests have resulted in my desire to learn about electric cars and spark interest in working on the production of these cars. I personally believe my abilities are more suited to the design and production of the components that form these cars rather than the cars themselves however I am extremely motivated to make any contribution I am able to.
+				</p>
+				<hr>
+				<p class="center-align">
+					To find out more about what I am able to offer, please visit my <a href="jmouncestephens_A1_resume.html" class="link-box">resume</a> page. Alternatively, for some of my skills, please visit the skills pages: <a href="skill_1_communication.html" class="link-box">Communication</a>, <a href="skill_2_engineering.html" class="link-box">engineering</a>, <a href="skill_3_problem_solving.html" class="link-box">analytical</a>.
+				</p>
+			</div>
+			
+			<div class="flex-display">
+				<div class="image-section">
+					<div class="image-with-credit-box">
+						<img src="images/web1.png" alt="Image of html, css, javascript logos" class="website-image">
+						<p>Source: <a href="https://unsplash.com/photos/a-computer-screen-with-a-keyboard-and-a-box-with-a-logo-YOEHA0Ou8ZY">Growtika</a></p>
+					</div>
+				</div>
+				<div class="text-block right-block" id="web-summary">
+					<h2 class="section-head right-align"><span id="web-skills-jump" class="jump-top"><span class="jump-bottom">My web skills</span></span></h2>
+					<p>
+						Over the course of the years I have been interested in software development and computer science, I have developed my abilties in relation to web development. While not my primary area of focus, I have learned many of the fundamentals required for web development including those from HTML, CSS and some JavaScript.<br><br>In fact, this entire portfolio website was developed from the ground up by myself only relying on a simple text editor, Sublime Text. My abilties span beyond what is demonstrated here, however.
+					</p>
+					<hr>
+					<p class="center-align">
+						To find out more about what I am capable of in web development, please visit my <a href="jmouncestephens_A1_web_skills.html" class="link-box">web skills</a> page.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		<footer class="page-footer">
+			<p>&copy; 2024 Jacob Mounce-Stephens. All rights reserved. All images/videos are original works unless otherwise stated.<br>Phone and Email icon in header are designed by <a href="www.freepik.com">Freepik</a>.</p>
+		</footer>
+	</body>
+
+</html>
