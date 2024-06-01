@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- 
+			ITC293 - Introduction to the web
+			Assessment 4 - HTML, CSS, Design and Java Script
+			
+			Jacob Mounce-Stephens
+			1/6/2024
+
+			This page contains a short demonstration of some HTML and CSS
+			skills.
+		 -->
+
+		<meta charset="utf-8">
+		<meta name="author" content="Jacob Mounce-Stephens">
+		<meta name="description" content="Portfolio website web skills page">
+		<meta name="keywords" content="Portfolio, Electric cars">
+		<title>My Portfolio - Web Skills</title>
+
+		<link rel="stylesheet" href="css/MounceStephensJ_ITC293_A3_CSS.css">
+		<link rel="icon" href="images/MounceStephensJ_ITC293_A3_Transport_Icon.png">
+	</head>
+
+	<body class="page-body">
+		<!-- Div contains the website header -->
+		<div class="page-header">
+			<div class="name-bar">
+				<h1>Jacob Mounce-Stephens</h1>
+				<div class="phone-bar">
+					<img src="images/MounceStephensJ_ITC293_A3_Phone_Icon.png" alt="Phone icon" class="header-image">
+					<a href="tel:0118-999-881-999-119-725-3">0118 999 881 999 119 725 3</a>
+				</div>
+				<div class="email-bar">
+					<img src="images/MounceStephensJ_ITC293_A3_Email_Icon.png" alt="Email icon" class="header-image">
+					<a href="mailto:somename@somedomain">somename@somedomain</a>
+				</div>
+			</div>
+			<div class="logo-bar">
+				<img src="images/MounceStephensJ_ITC293_A3_Transport_Icon.png" alt="Website logo. An electric car." class="header-logo">
+				<p><a href="https://www.flaticon.com/free-icons/transportation" title="transportation icons">Transportation icons created by msidiqf - Flaticon</a></p>
+			</div>
+		</div>
+		<!-- Div contains both the internal and external navigation bars -->
+		<div class="navigation-div">
+			<div class="navigation-bar">
+				<ul>
+					<li><a href="MounceStephensJ_ITC293_A3_Index.html">Index</a></li>
+					<li><a href="MounceStephensJ_ITC293_A3_About.html">About</a></li>
+					<li><a href="MounceStephensJ_ITC293_A3_Resume.html">Resume</a></li>
+					<li><a href="MounceStephensJ_ITC293_A3_Skill_1_Communication.html">Communication Skills</a></li>
+					<li><a href="MounceStephensJ_ITC293_A3_Skill_2_Engineering.html">Engineering Skills</a></li>
+					<li><a href="MounceStephensJ_ITC293_A3_Skill_3_Problem_Solving.html">Analytical Skills</a></li>
+					<li class="active">Web Skills</li>
+				</ul>
+			</div>
+			<div class="internal-navigation">
+				<ul>
+					<li><a href="#skills-jump">My skills</a></li>
+					<li><a href="#form-jump">Form demo</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="about-body">
+			<div class="flex-display">
+				<div class="text-block left-block">
+					<!-- Credit (explained in document): Robert Hickman - https://stackoverflow.com/questions/38530800/jumping-to-a-different-part-of-the-same-page-with-a-margin -->
+					<h2 class="section-head"><span id="skills-jump" class="jump-top"><span class="jump-bottom">My skills in web development</span></span></h2>
+					<p>
+						This portfolio serves as a minimalistic demonstration of my skills and abilities in relation to web development as this website was developed using no external tools or programs, just a simple text editor. Through my time learning HTML and CSS I have learned various key concepts and the fundamentals required to create a website. For example, the code required to create the section below is shown to the right:
+					</p>
+
+					<!-- No class or id usage as this code is for demonstration purposes -->
+					<!-- Kept for A2 for same reason as above, except for the class used to remove background colour -->
+					<div style="background-color: #00b4d8; padding: 0.5em;" class="demo-div">
+						<hr>
+						<h4>Fancy text</h4>
+						<p><span style="text-decoration: underline;">Underlined</span></p>
+						<ul style="list-style-type: square;">
+							<li><span style="color: red;">Demo 1</span></li>
+							<li style="list-style-type: none;">
+								<ol style="list-style-type: lower-roman">
+									<li><span style="font-size: 2em;">Demo 2</span></li>
+									<li><span style="font-style: italic;">Demo 3</span></li>
+								</ol>
+							</li>
+							<li style="font-family: monospace, serif">Demo 4</li>
+						</ul>
+						<hr>
+					</div>
+
+					<p>
+						Futhermore, I have spent time learning about some interesting CSS concepts such as image modifcation, as shown to the right, and basic animations and transitions. For example, hover over the box below and see what happens!
+					</p>
+					<div class="hover-bound">
+						<p class="hover-animation">Hover over me!</p>
+					</div>
+					<p>
+						Combining tools such as those demonstrated above along with the many many other tools provided by HTML and CSS it is possible for me to create many different and interesting things very easily. Futhermore, when by utilising JavaScript and learning more about its inner workings, I am sure it would be possible to create almost anything as a website.
+					</p>
+				</div>
+				<div class="image-section">
+					<!-- Below div needed only to keep formatting consistent. This is an original image -->
+					<!--
+						Nested divs used for image formatting. Needed to make the code similar
+						to how the other images are formatted. Only used for image sections with 2 stacked images.
+					-->
+					<div class="image-table-row">
+						<div class="image-with-credit-box"> 
+							<img src="images/MounceStephensJ_ITC293_A3_Code_Demo_2.png" alt="Image of html code" class="website-image">
+						</div>
+					</div>
+					<div class="image-table-row">
+						<div class="image-with-credit-box">
+							<img src="images/MounceStephensJ_ITC293_A3_Coloured_Flasks.jpg" alt="Image of science flasks" class="website-image  chemistry2-image">
+							<p>Source: <a href="https://unsplash.com/photos/three-assorted-color-liquid-filled-laboratory-apparatuses-yS3XM9qx3hQ">Alex Kondratiev</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flex-display form-div">
+				<div class="text-block center-block">
+					<h2 class="section-head"><span id="form-jump" class="jump-top"><span class="jump-bottom">Form demonstration</span></span></h2>
+					<p>
+						Another skill I have when it comes to web development is the ability to create interactive and useful forms to allow ther user to input some data into the website and then for some work to be completed on that data.
+						<br>
+						For a demonstration, please press the button below.
+					</p>
+					<button class="form-button" onclick="window.open('MounceStephensJ_ITC293_A3_Form_Page.html', '_blank')">Open form</button>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		<footer class="page-footer">
+			<p>&copy; 2024 Jacob Mounce-Stephens. All rights reserved. All images/videos are original works unless otherwise stated.<br>Phone and Email icon in header are designed by <a href="www.freepik.com">Freepik</a>.</p>
+		</footer>
+	</body>
+
+</html>

@@ -1,0 +1,555 @@
+/**
+ * ITC293 - Introduction to the web
+ * Assessment 4 - HTML, CSS, Design and Java Script
+ * 
+ * Jacob Mounce-Stephens
+ * 1/6/2024
+ * 
+ * This file contains all CSS that is used across multiple pages of the site.
+ */
+
+/**
+ * Classes related to the header at the top of each page
+ */
+.name-bar {
+	text-align: left;
+	background-color: #03045e;
+	color: white;
+	padding: 0.1em 1em 0.1em 1em;
+	font-family: Verdana, serif;
+}
+/* Style used for the phone portion of the header */
+.phone-bar {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+}
+.phone-bar a {
+	color: white;
+}
+/* Styling used for the email portion of the header */
+.email-bar {
+	display: flex;
+	gap: 1em;
+	align-items: center;
+	padding-bottom: 1em;
+	margin-top: 0.5em;
+}
+
+.email-bar a {
+	color: white;
+}
+/* Style used for the phone and email icon in the header */
+.header-image {
+	width: 2.5em;
+	height: 2.5em;
+	filter: invert(1);
+}
+
+/**
+ * Classes related to the navigation bars at the top of each page
+ */
+/* The following two classes are used to shift where the screen scrolls to upon clicking the internal navigation bar */
+.jump-top {
+	position:relative;
+	top:-5em;	
+}
+.jump-bottom {
+	position:relative;
+	top:5em;
+}
+
+/* The div used to hold both navigation bars */
+.navigation-bar {
+	font-family: "Lucida Console", serif;
+}
+/* The div used for the navigation bar between pages */
+.navigation-div {
+	position: sticky;
+	top: 0;	
+	z-index: 1;
+}
+/* The style of the external navigation bar ul */
+.navigation-bar ul {
+	background-color: #023e8a;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+	color: white;
+	display: flex; /* Restrict nav bar to one line */
+}
+/* The style of the external navigation bar li */
+.navigation-bar li {
+	display: block;
+	float: left;
+	border-right: solid 1px black;
+	color: white;
+}
+/* Remove the right border from the last navigation tab */
+.navigation-bar li:last-child {
+	border-right: none;
+}
+/* Set the colour when hovering over a navigation option if it is not the current page */
+.navigation-bar li:hover:not(.active) {
+	background-color: #0077b6;
+}
+/* The background colour for the currently open page */
+.active {
+	background-color: #0096c7;
+}
+/* The sizing of each element in the external navigation bar */
+.navigation-bar a, .active {
+	display: block;
+	padding:  0.5em 1em 0.5em 1em;
+}
+/* The style of the tabs that don't correspond to the currently open page */
+.navigation-bar a {
+	color: white;
+	text-decoration: none;
+}
+
+/* The div used for the internal navigation bar */
+.internal-navigation {
+	font-family: "Lucida Console", serif;
+}
+/* The style of the internal navigation bar ul */
+.internal-navigation ul {
+	background-color: #0096c7;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+	color: white;	
+}
+/* The style of the internal navigation bar li */
+.internal-navigation li {
+	display: block;
+	float: left;
+	border-right: solid 1px black;
+	color: white;
+	display: block;
+}
+/* The sizing of each element in the internal navigation bar */
+.internal-navigation a {
+	display: block;
+	color: white;
+	padding:  0.5em 1em 0.5em 1em;
+	text-decoration: none;
+}
+/* Set the colour of an internal navigation tab when hovered over */
+.internal-navigation a:hover {
+	background-color: #00b4d8;
+}
+
+
+/**
+ * Classes used for styling images throughout the website
+ */
+/* The base style for every image on the website */
+.website-image {
+	border-radius: 1em;
+	/*height: 50%;*/
+	z-index: -1;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	filter: drop-shadow(0em 0em 0.4em black);
+	max-width: 100%;
+}
+/* Default sizing for the divs that hold images */
+.image-section {
+	width:50%;
+	margin:1em;
+	display: table;
+}
+/* Properties for images that have a credit attached */
+.image-with-credit-box {
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+	display: table-cell;
+}
+/* Properties for the credit portion of images */
+.image-with-credit-box p {
+	margin: 0;
+	font-style: italic;
+	text-align: center;
+}
+
+.image-table-row {
+	display: table-row;
+	vertical-align: middle;
+}
+
+/**
+ * Classes related to the general formatting of the website
+ */
+/* Style of the text-containging portions of the site */
+.text-block {
+	padding: 0em 1em 0em 1em;
+	width: 50%;
+	border: solid 1px black;
+	margin-bottom: 1em;
+}
+/* Leave space between the first text-block and the navigation bar */
+.text-block:first-child {
+	margin-top: 1em;
+}
+/* The titles of each text block */
+.section-head {
+	background-color: #0096c7;
+	padding: 1em;
+	text-decoration: underline overline rgba(0, 0, 0, 0.3);
+	box-shadow: 0.1em 0.1em 0.2em black;
+	font-style: italic;
+	font-size: 2em;
+}
+/* The subheadings for text blocks */
+.section-subhead {
+	background-color: #00b4d8;
+	padding: 0.5em;
+	text-decoration: dashed underline overline rgba(0, 0, 0, 0.2);
+	box-shadow: 0.1em 0.1em 0.1em black;
+	font-style: normal;
+	font-size: 1.4em;
+}
+/* Position a text block against the left edge of the page */
+.left-block {
+	background-image: linear-gradient(to right, #ade8f4, #90e0ef);
+}
+/* Position a text block against the right edge of the page */
+.right-block {
+	background-image: linear-gradient(to left, #ade8f4, #90e0ef);
+	margin-left: auto;	
+}
+
+
+/**
+ * Style classes that do not fit into the above categories
+ */
+/* Modify all ul elements that are not in the navigation bar */
+ul:not(.navigation-bar) {
+	list-style-type: square;
+}
+/* Modify all ol elements */
+ol {
+	list-style-type: lower-roman;
+}
+/* Styles that affect the entire body container of the website */
+.page-body {
+	background-color: #caf0f8;
+	margin: 0;
+}
+
+
+/* Index internal CSS */
+.code1-image {
+	max-width: 100%;
+	max-height: 50%;
+}
+
+.math1-image {
+	margin-top: 3%;
+	max-width: 100%;
+	max-height: 47%;
+}
+
+.link-box {
+	border: solid 1px black;
+	padding: 0.1em;
+	font-weight: bolder;
+}
+
+.subject-emphasis {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 1.1em;				
+}
+.comp-sci {
+	color: red;
+}
+.maths {
+	color: blue;
+}
+.engineer {
+	color: purple;
+}
+.hardware {
+	color: green;
+}
+
+/* About internal CSS */
+.chemistry-image {
+	max-width: 60%;
+}
+
+/* Resume internal CSS */
+.center-block {
+	background-image: linear-gradient(to right, #ade8f4, #90e0ef);
+	margin-left: auto;
+	margin-right: auto;	
+	width: 70%;
+}
+
+/* Web skills internal CSS */
+.hover-bound {
+	background-color: #00b4d8;
+	width: max-content;
+	transition: all 1s ease;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+
+.hover-bound:hover {
+	background-color: red;
+	transform: scaleY(2) scaleX(3);
+	color: white;
+}
+
+.chemistry2-image {
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	filter: blur(0.1em);
+	clip-path: polygon(10% 10%, 100% 15%, 70% 100%, 0% 90%);
+}
+
+/* New stylings for A2 */
+.page-footer {
+	text-align: center;
+}
+
+/* Mark-table is used in resume for school marks */
+.mark-table table, td, th {
+	border: solid 1px black;
+}
+
+.mark-table {
+	text-align: center;
+	border-collapse: collapse;
+}
+
+.page-header {
+	display: flex;
+}
+
+.name-bar {
+	width: 50%;
+}
+
+/* Logo sections relate to the icon at the top right of each page */
+.logo-bar {
+	background-color: #03045e;
+	width: 50%;
+	text-align: right;
+	padding-right: 1em;
+}
+
+.header-logo {
+	height: 12em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.logo-bar p {
+	text-align: right;
+}
+
+.logo-bar a {
+	color: white;
+	font-style: italic;
+}
+
+/* Classes to remove in-line styles */
+.center-align {
+	text-align: center;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.flex-display {
+	display: flex;
+}
+
+.max-width {
+	max-width:100%
+}
+
+.top-gap {
+	margin-top: 2em;
+}
+
+.upper-roman-list {
+	list-style: upper-roman;
+}
+
+.no-list-style {
+	list-style-type: none;
+}
+
+html {
+	font-size: 110%;
+}
+
+/**
+ * Form styling
+ */
+.form-block {
+	padding: 1em;
+	margin-top: 1em;
+	font-size: 125%;
+	width: 60%;
+}
+
+.name-input {
+	display: flex;
+}
+
+.name-input .form-text-block {
+	width: 50%;
+	padding: 0.1em;
+}
+
+.form-text-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.require {
+	color: red;
+	font-style: italic;
+	font-size: 80%;
+}
+
+.no-lower-margin {
+	margin-bottom: 0;
+}
+
+.form-button {
+	background-color: #00b4d8;
+	border: solid 2px #00b4d8;
+	padding: 1em;
+	font-size: 150%;
+	transition: all 0.1s ease;
+	margin: 1em;
+}
+
+.form-button:hover {
+	background-color: #4ae1ff;
+	border: solid 2px #00b4d8;
+}
+
+/* Additional stylings from A3 */
+.code-video {
+	width: 460px;
+	height: 259px;
+}
+
+.video-box {
+	display: flex;
+	justify-content: center;
+}
+
+/**
+ * All stylings below this point are exclusively related to printing the website
+ */
+@media print {
+	/* Standardise and enlarge the font across the entire page. Additionally set the default colour to black. */
+	html {
+		font-family: Arial, Helvetica, Verdana, sans-serif;
+		font-size: 125%;
+		color:#000000;
+	}
+
+	/* Remove background colours and gradients from text sections and page. */
+	.page-body {
+		background-color: white;
+	}
+	.text-block {
+		background-image: none;
+	}
+	.section-head {
+		background-color: white;
+	}
+	.section-subhead {
+		background-color: white;
+	}
+
+	/* Revert text colours in header to black */
+	.name-bar {
+		color: black;
+		background-color: white;
+	}
+	.phone-bar a {
+		color: black;
+	}
+	.email-bar a {
+		color: black;
+	}
+
+	/* Completely hide both navigation bars */
+	.navigation-bar {
+		display: none;
+		font-size: 100%;
+	}
+	.internal-navigation {
+		display: none;
+	}
+
+	/* Remove the offsets needed for page navigation as it is not needed for printing */
+	.jump-top {
+		top: 0em;
+	}	
+	.jump-bottom {
+		top: 0em;		
+	}
+
+	/*Remove the invert filter on the header logos */
+	.header-image {
+		filter: none;
+	}
+
+	.link-box {
+		border: none;
+		padding: 0em;
+	}
+
+	.center-block {
+		background-image: none;
+	}
+
+	.logo-bar {
+		background-color: white;
+	}
+	.logo-bar a {
+		color: black;
+	}
+
+	/* Hide video div when printing. */
+	.code-demo {
+		display: none;
+	}
+
+	/* Hide form div when printing */
+	.form-div {
+		display: none;
+	}
+
+	.demo-div {
+		background-color: white !important;
+	}
+
+	.hover-bound {
+		background-color: white;
+	}
+}
